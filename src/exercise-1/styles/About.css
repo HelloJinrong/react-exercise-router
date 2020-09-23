@@ -1,0 +1,11 @@
+.about {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin: 50px;
+}
+.about p{
+    margin: 30px;
+}
+.about .line2{
+    margin-top: 50px;
+}
