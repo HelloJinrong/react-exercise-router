@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import '../styles/App.css';
-import {BrowserRouter as Router, Link, NavLink, Route} from 'react-router-dom';
+import {BrowserRouter as Router, NavLink, Route,Redirect,Switch} from 'react-router-dom';
 import Home from './Home';
 import Profile from './Profile'
 import About from './About'
@@ -47,14 +47,16 @@ class App extends Component {
               </li>
             </ul>
           </div>
-          <switch>
+          <Switch>
             <Route exact path='/' component={Home}/>
             <Route exact path='/products' component={Products} />
+            <Redirect from="/goods" to="/products"/>
             <Route exact path='/my-profile' component={Profile}/>
             <Route exact path='/about-us' component={About}/>
             <Route path='/products/:id' component={Product} />
-
-          </switch>
+            <Redirect from="/goods" to="/products"/>
+            <Route component={Home}  />
+          </Switch>
         </Router>
 
 
