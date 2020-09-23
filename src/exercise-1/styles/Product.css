@@ -1,0 +1,8 @@
+.product{
+    margin: 40px 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.product p{
+    margin-top: 20px;
+    font-size: large;
+}
